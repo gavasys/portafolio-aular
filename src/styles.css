@@ -1,34 +1,20 @@
-
-/* svg pen */
-
-body{
-  padding: 1em;
-  background: white;
-  color: #777;
-  text-align: center;
-  font-family: "Gill sans", sans-serif;
-  width: 80%;
-  margin: 0 auto;
-}
-
-
-/*
-  Color del Loading
-*/
+/* SVG Animation */
 svg path,
 svg rect{
   fill: black;
 }
 
-/* You can add global styles to this file, and also import other style files */
 
 
+/* Animaciones */
 .animated {
-  -webkit-animation-duration: 1s;
-  animation-duration: 1s;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
-}
+    -webkit-animation-duration: 0.6s;
+    animation-duration: 0.6s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+  }
+
+
 @media (prefers-reduced-motion) {
     .animated {
       -webkit-animation: unset !important;
@@ -37,6 +23,7 @@ svg rect{
       transition: none !important;
     }
   }
+
   @-webkit-keyframes fadeIn {
     from {
       opacity: 0;
@@ -47,17 +34,17 @@ svg rect{
     }
   }
   
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-    }
-  
-    to {
-      opacity: 1;
-    }
-  }
-  
-  .fadeIn {
-    -webkit-animation-name: fadeIn;
-    animation-name: fadeIn;
-  }
+@keyframes fadeIn {
+from {
+    opacity: 0;
+}
+
+to {
+    opacity: 1;
+}
+}
+
+.fadeIn {
+-webkit-animation-name: fadeIn;
+animation-name: fadeIn;
+}
